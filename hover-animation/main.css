@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: radial-gradient(#333, #111);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+  line-height: 1.1em;
+}
+
+h1 span {
+  background-repeat: no-repeat;
+  padding: 0.1em 0.3em;
+  border-radius: 0.1em;
+  background-size: 100% 0%;
+  transition: 250ms ease;
+}
+
+.text1 {
+  background-image: linear-gradient(0deg, #111, #000);
+  background-position: top left;
+}
+
+.text2 {
+  background-image: linear-gradient(0deg, #fff, #ccc);
+  background-position: bottom left;
+  transition-delay: 200ms;
+}
+
+h1:hover span {
+  background-size: 100% 100%;
+}
+
+h1:hover .text2 {
+  color: #000;
+}
