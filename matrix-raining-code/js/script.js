@@ -5,7 +5,7 @@ let width = (canvas.width = window.innerWidth);
 let height = (canvas.height = window.innerHeight);
 let str = "ていは｢ﾚﾀｾﾝこリストとくリストのつべて大そされめ1234567890abcdefghijklmnopqrstuvwxyz";
 let matrix = str.split("");
-let font = 12;
+let font = 16;
 let col = width / font;
 let arr = [];
 
@@ -14,9 +14,9 @@ for (i = 0; i < col; i++) {
 }
 
 const draw = () => {
-  ctx.fillStyle = "rgba(0,0,0,0.05)";
+  ctx.fillStyle = "rgba(0,0,0,0.075)";
   ctx.fillRect(0, 0, width, height);
-  ctx.fillStyle = "rgb(1, 250, 1)";
+  ctx.fillStyle = "rgba(0, 250, 0)";
   ctx.font = `${font}px system-ui`;
 
   for (i = 0; i < arr.length; i++) {
@@ -30,6 +30,6 @@ const draw = () => {
   }
 };
 
-setInterval(draw, 30);
+setInterval(draw, 50);
 
 window.addEventListener("resize", () => location.reload());
