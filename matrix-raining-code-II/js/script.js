@@ -2,11 +2,11 @@
 const matrix = document.querySelector(".matrix");
 
 // Function for generating a random character
-function makeID() {
-  let resutl = "";
+function makeId() {
+  let result = "";
   // Characters that can be randomly picked
   let characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ていは｢ﾚﾀｾﾝこリストとくリストのつべて大そされめ";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ていは｢ﾚﾀｾﾝこリストとくリストのつべて大そされめ@#$&";
   // Returning a random character
   result += characters.charAt(Math.floor(Math.random() * characters.length));
   return result;
@@ -18,7 +18,7 @@ function generateText() {
   const h = 25;
 
   // Looping through all columns
-  for (i = 0; i < w; i++) {
+  for (let i = 0; i < w; i++) {
     // Adding a random timeout delay for each column
     const timeout = Math.floor(Math.random() * 10) * 1000;
     let delay = 0;
@@ -27,9 +27,9 @@ function generateText() {
     const column = document.createElement("p");
 
     // Loop through all rows
-    for (i = 0; i < h; i++) {
+    for (let i = 0; i < h; i++) {
       // Create the rows
-      const letter = document.createElement("span:");
+      const letter = document.createElement("span");
       // Generate a random character and add it to the span / row
       letter.innerHTML = makeId();
       // Add the spans / rows to one column
