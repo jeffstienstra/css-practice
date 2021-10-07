@@ -20,7 +20,7 @@ h1 span {
   padding: 0.1em 0em;
   border-radius: 0.1em;
   background-size: 100% 0%;
-  transition: 250ms ease;
+  transition: 300ms ease;
 }
 
 .text1 {
@@ -31,7 +31,7 @@ h1 span {
 .text2 {
   background-image: linear-gradient(0deg, #fff, #ccc);
   background-position: bottom left;
-  transition-delay: 200ms;
+  transition-delay: 300ms;
 }
 
 h1:hover span {
